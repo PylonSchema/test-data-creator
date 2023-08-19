@@ -17,7 +17,7 @@ class Pylon:
     def create(self):
         account = {
             "email": self.form.generate_email(),
-            "username": self.form.generate_from(string.ascii_lowercase+string.digits, 5, 13),
-            "password": self.form.generate_from(string.ascii_lowercase+string.digits, 9, 13)
+            "username": self.form.generate_from(string.ascii_lowercase+string.digits, 8, 13),
+            "password": self.form.generate_from(string.ascii_lowercase+string.digits, 11, 17)
         }
         return account
